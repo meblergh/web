@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .titulo {
+      color: #fff;
+      font-size: 56px;
+      margin-bottom: 80px;
+    }
+
+    .linea {
+      font-size: 22px;
+      font-weight: bold;
+      opacity: 0;
+      animation: animarTexto 4s infinite ease-in-out;
+    }
+
+    .linea:nth-child(2) { color: #f2f2f2;  animation-delay: 0s; }
+    .linea:nth-child(3) { color: #3498db;  animation-delay: 1s; }
+    .linea:nth-child(4) { color: #2ecc71;  animation-delay: 2s; }
+    .linea:nth-child(5) { color: #f1c40f;  animation-delay: 3s; }
+
+    @keyframes animarTexto {
+      0%, 100% { transform: translateY(-60px); opacity: 1; }
+      25%      { transform: translateY(0);   opacity: 1; }
+      50%      { transform: translateY(60px); opacity: 1; }
+      75%      { transform: translateY(0);   opacity: 1; }
+    }
+
+    .docente {
+      color: #fff;
+      font-size: 28px;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="titulo">Créditos finales:</div>
+
+  <div class="linea">Romulo Guillermo Vargas (5).</div>
+  <div class="linea">Leandro Daniel Ticona (5).</div>
+  <div class="linea">Piero Fernando Mallma (5).</div>
+  <div class="linea">Jhonny Adoni Pumacanchari (5).</div>
+
+  <div class="docente">Docente: Magister Víctor Andrade Soto.</div>
+</body>
+</html>

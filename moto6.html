@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Información de la Moto:</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #65e43f;
+    }
+
+    .contenedor {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .carrusel-con-texto {
+      display: flex;
+      align-items: center;
+      background-color: #41c20e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      max-width: 1100px;
+      width: 100%;
+      gap: 30px;
+    }
+
+    .carrusel {
+      width: 450px;
+    }
+
+    .carrusel img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .texto {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .texto h2, .texto h3 {
+      margin: 10px 0;
+    }
+
+    .texto p {
+      margin: 5px 0;
+    }
+
+    .texto ul {
+      padding-left: 20px;
+    }
+
+    .texto li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <div class="carrusel-con-texto"><!-- Carrusel -->
+      <div class="carrusel">
+        <img src="img/SUZUKI GSX-R150.jpeg" alt="Carrusel imagen">
+      </div>
+
+      <!-- Texto -->
+      <div class="texto">
+        <h2>SUZUKI GSX-R150</h2>
+        <p>
+        El motor de la Suzuki GSX-R150 es un monocilíndrico de 147 cc,
+        refrigerado por líquido, con doble árbol de levas (DOHC) y 4 válvulas.
+        Desarrolla 18.9 hp a 10,500 rpm y 14 Nm de torque a 9,000 rpm.
+        El sistema de alimentación es inyección electrónica y
+        el sistema de encendido es eléctrico. La transmisión es
+        mecánica de 6 velocidades
+        </p>
+        <ul>
+          <li> Cilindrada: 147 cc</li>
+          <li>Transmisión: 6 velocidades</li>
+          <li>Potencia Máxima: 18.9 HP @ 10500 RPM</li>
+          <li>Peso: 131 Kilogramos</li>
+          <li>Capacidad del Tanque: 11 Litros</li>
+          <li>Sistema de arranque: Eléctrico de fácil arranque</li>
+          <li>Freno posterior:  disco</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
